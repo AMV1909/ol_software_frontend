@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OL Software Technical Test
 
-## Getting Started
+Este proyecto es una aplicación web construida con [Next.js](https://nextjs.org), diseñada para pruebas técnicas y desarrollo profesional.
 
-First, run the development server:
+## Tecnologías principales
+
+- **Next.js** (App Router)
+- **Tailwind CSS** (estilos utilitarios)
+- **shadcn/ui** (componentes UI reutilizables y modernos)
+- **React Query** (manejo de datos remotos y caché)
+- **Zustand** (estado global)
+- **Zod** (validación de formularios y datos)
+- **Jest + Testing Library** (pruebas unitarias y de integración)
+
+## Instalación
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+# o
+npm install
+# o
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+# o
+npm run dev
+# o
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la app.
 
-## Learn More
+## Testing
 
-To learn more about Next.js, take a look at the following resources:
+Ejecuta las pruebas unitarias con:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm test
+# o
+npm test
+# o
+yarn test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estructura del proyecto
 
-## Deploy on Vercel
+- `src/app/` — Entrypoints y rutas de la app (Next.js App Router)
+- `src/ui/` — Componentes UI atómicos, moleculares y organismos
+- `src/lib/` — Lógica de negocio, hooks, helpers, validaciones y store global
+- `src/lib/helpers/` — Funciones utilitarias y helpers
+- `src/lib/schemas/` — Esquemas de validación Zod
+- `src/lib/hooks/` — Hooks personalizados (React Query, Zustand, etc)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pruebas unitarias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Los tests están en archivos `__tests__` junto a los helpers/componentes.
+- Usa Jest + Testing Library para componentes y lógica.
+- Mockea dependencias externas cuando sea necesario.
+
+## Deploy
+
+Puedes desplegar fácilmente en [Vercel](https://vercel.com/) o cualquier plataforma compatible con Next.js.
+
+---
+
+> Proyecto para evaluación técnica y referencia profesional. Para dudas técnicas, contacta al autor.
